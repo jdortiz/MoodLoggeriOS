@@ -80,6 +80,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9E52E6B27ECB6F300722CD1 /* Build configuration list for PBXNativeTarget "MoodLogger" */;
 			buildPhases = (
+				C92D36A427ECC480006E8CA8 /* Swiftlint */,
 				C9E52E5927ECB6EF00722CD1 /* Sources */,
 				C9E52E5A27ECB6EF00722CD1 /* Frameworks */,
 				C9E52E5B27ECB6EF00722CD1 /* Resources */,
@@ -102,6 +103,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
+				ORGANIZATIONNAME = MongoDB;
 				TargetAttributes = {
 					C9E52E5C27ECB6EF00722CD1 = {
 						CreatedOnToolsVersion = 13.3;
@@ -139,6 +141,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C92D36A427ECC480006E8CA8 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SDKROOT=(xcrun --sdk macosx --show-sdk-path)\nswift run --package-path Tools/ swiftlint\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C9E52E5927ECB6EF00722CD1 /* Sources */ = {
