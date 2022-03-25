@@ -21,7 +21,9 @@ import SwiftUI
 
 struct EntriesListView: View {
     // MARK: - Properties
-    let viewModel: EntriesListViewModel
+    private let viewModel: EntriesListViewModel
+    @State private var showModal = false
+    @State private var newMood = Mood.neutral
 
     // MARK: - Initializer
     init(viewModel: EntriesListViewModel) {
@@ -40,12 +42,20 @@ struct EntriesListView: View {
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
                 Button {
-                    print("Hola")
+                    showModal = true
                 } label: {
                     Label("Add", systemImage: "plus")
                 }
             }
         }
+        .sheet(isPresented: $showModal) {
+            print("Create mood: \(newMood) at \(Date())")
+        } content: {
+            NavigationView {
+                MoodDialogView(mood: $newMood)
+            }
+        }
+
     }
 }
 

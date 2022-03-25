@@ -17,6 +17,17 @@
  * limitations under the License.
  */
 
-enum Mood {
+enum Mood: CustomStringConvertible {
     case sad, neutral, happy
+
+    var description: String {
+        switch self {
+        case .sad:
+            return "🙁"
+        case .neutral:
+            return "😑"
+        case .happy:
+            return "😃"
+        }
+    }
 }

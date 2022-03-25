@@ -34,17 +34,8 @@ struct EntryRowView: View {
     // MARK: - View
     var body: some View {
         HStack(alignment: .center) {
-            switch entry.mood {
-            case .sad:
-                Text("🙁")
-                    .font(Font.system(size: 30))
-            case .neutral:
-                Text("😑")
-                    .font(Font.system(size: 30))
-            case .happy:
-                Text("😃")
-                    .font(Font.system(size: 30))
-            }
+            Text(String("\(entry.mood)"))
+                .font(Font.system(size: 30))
             Text(entry.date, formatter: formatter)
         }
     }

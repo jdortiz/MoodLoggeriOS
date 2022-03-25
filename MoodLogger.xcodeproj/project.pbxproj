@@ -12,6 +12,7 @@
 		C92D36AE27EDD392006E8CA8 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92D36AD27EDD391006E8CA8 /* Mood.swift */; };
 		C92D36B127EDD4C9006E8CA8 /* InMemoryEntryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92D36B027EDD4C9006E8CA8 /* InMemoryEntryRepository.swift */; };
 		C943C4EF27EDDA2300086225 /* EntryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943C4EE27EDDA2300086225 /* EntryRowView.swift */; };
+		C943C4F127EDFAB200086225 /* MoodDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943C4F027EDFAB200086225 /* MoodDialogView.swift */; };
 		C9E52E6127ECB6EF00722CD1 /* MoodLoggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E52E6027ECB6EF00722CD1 /* MoodLoggerApp.swift */; };
 		C9E52E6327ECB6EF00722CD1 /* EntriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E52E6227ECB6EF00722CD1 /* EntriesListView.swift */; };
 		C9E52E6527ECB6F300722CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E52E6427ECB6F300722CD1 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		C92D36AD27EDD391006E8CA8 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		C92D36B027EDD4C9006E8CA8 /* InMemoryEntryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryEntryRepository.swift; sourceTree = "<group>"; };
 		C943C4EE27EDDA2300086225 /* EntryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryRowView.swift; sourceTree = "<group>"; };
+		C943C4F027EDFAB200086225 /* MoodDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDialogView.swift; sourceTree = "<group>"; };
 		C9E52E5D27ECB6EF00722CD1 /* MoodLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E52E6027ECB6EF00722CD1 /* MoodLoggerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodLoggerApp.swift; sourceTree = "<group>"; };
 		C9E52E6227ECB6EF00722CD1 /* EntriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesListView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				C9E52E6227ECB6EF00722CD1 /* EntriesListView.swift */,
 				C943C4EE27EDDA2300086225 /* EntryRowView.swift */,
+				C943C4F027EDFAB200086225 /* MoodDialogView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C92D36AE27EDD392006E8CA8 /* Mood.swift in Sources */,
+				C943C4F127EDFAB200086225 /* MoodDialogView.swift in Sources */,
 				C92D36AB27EDD2A2006E8CA8 /* Entry.swift in Sources */,
 				C92D36B127EDD4C9006E8CA8 /* InMemoryEntryRepository.swift in Sources */,
 				C9E52E6327ECB6EF00722CD1 /* EntriesListView.swift in Sources */,
