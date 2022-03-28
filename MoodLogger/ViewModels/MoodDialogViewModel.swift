@@ -1,5 +1,5 @@
 /*
- * 25/3/22. Initial version created by jorge
+ * 28/3/22. Initial version created by jorge
  * for a MongoDB training.
  *
  * Copyright 2022 Jorge Ortiz Fuentes
@@ -16,33 +16,35 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import Foundation
 
-import Combine
-
-class EntriesListViewModel: RepositoryObserver, ObservableObject {
-
+class MoodDialogViewModel {
     let repository: EntryRepository
-
-    @Published var entries: [Entry] = []
 
     init(repository: EntryRepository) {
         self.repository = repository
-        repository.observe(observer: self)
-        repository.getAll { result in
-            if case .success(let newList) = result {
-                entries = newList
+    }
+
+    func onHappyButton() {
+        repository.add(entry: Entry(mood: .happy, date: Date())) { result in
+            if case .failure(let error) = result {
+                print("Failure adding mood: \(error)")
             }
         }
     }
 
-    func onAddButton() {
-
+    func onNeutralButton() {
+        repository.add(entry: Entry(mood: .neutral, date: Date())) { result in
+            if case .failure(let error) = result {
+                print("Failure adding mood: \(error)")
+            }
+        }
     }
 
-    func update() {
-        repository.getAll { result in
-            if case .success(let newList) = result {
-                entries = newList
+    func onSadButton() {
+        repository.add(entry: Entry(mood: .sad, date: Date())) { result in
+            if case .failure(let error) = result {
+                print("Failure adding mood: \(error)")
             }
         }
     }

@@ -21,7 +21,7 @@ import SwiftUI
 
 struct MoodDialogView: View {
     // MARK: - Properties
-    @Binding var mood: Mood
+    let viewModel: MoodDialogViewModel
     @Environment(\.presentationMode) private var presentationMode
 
     // MARK: - View
@@ -30,19 +30,19 @@ struct MoodDialogView: View {
             Text("Select your mood")
             HStack(spacing: 30) {
                 Button {
-                    mood = .sad
+                    viewModel.onSadButton()
                     self.presentationMode.wrappedValue.dismiss()
                 } label: {
                     MoodButton(mood: .sad)
                 }
                 Button {
-                    mood = .neutral
+                    viewModel.onNeutralButton()
                     self.presentationMode.wrappedValue.dismiss()
                 } label: {
                     MoodButton(mood: .neutral)
                 }
                 Button {
-                    mood = .happy
+                    viewModel.onHappyButton()
                     self.presentationMode.wrappedValue.dismiss()
                 } label: {
                     MoodButton(mood: .happy)
@@ -65,8 +65,8 @@ struct MoodButton: View {
     }
 }
 
-struct MoodDialogViewPreviews: PreviewProvider {
-    static var previews: some View {
-        MoodDialogView(mood: .constant(.neutral))
-    }
-}
+// struct MoodDialogViewPreviews: PreviewProvider {
+//    static var previews: some View {
+//        MoodDialogView(mood: .constant(.neutral))
+//    }
+// }

@@ -16,7 +16,29 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import Foundation
 
-class InMemoryEntryRepository {
+class InMemoryEntryRepository: EntryRepository {
+    private var observer: RepositoryObserver?
+    private var entries: [Entry] = [
+        Entry(mood: .neutral, date: Calendar.current.date(byAdding: .day,
+                                                          value: -2,
+                                                          to: Date()) ?? Date()),
+        Entry(mood: .sad, date: Calendar.current.date(byAdding: .day,
+                                                          value: -1,
+                                                          to: Date()) ?? Date())
+    ]
 
+    func getAll(completion: (Result<[Entry], RepositoryError>) -> Void) {
+        completion(.success(entries))
+    }
+
+    func add(entry: Entry, completion: (Result<Void, RepositoryError>) -> Void) {
+        entries.append(entry)
+        observer?.update()
+    }
+
+    func observe(observer: RepositoryObserver) {
+        self.observer = observer
+    }
 }

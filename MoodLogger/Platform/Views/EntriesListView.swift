@@ -21,7 +21,7 @@ import SwiftUI
 
 struct EntriesListView: View {
     // MARK: - Properties
-    private let viewModel: EntriesListViewModel
+    @ObservedObject private var viewModel: EntriesListViewModel
     @State private var showModal = false
     @State private var newMood = Mood.neutral
 
@@ -52,7 +52,7 @@ struct EntriesListView: View {
             print("Create mood: \(newMood) at \(Date())")
         } content: {
             NavigationView {
-                MoodDialogView(mood: $newMood)
+                MoodDialogView(viewModel: MoodDialogViewModel(repository: viewModel.repository))
             }
         }
 
