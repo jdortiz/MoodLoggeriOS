@@ -21,12 +21,17 @@ import SwiftUI
 @main
 struct MoodLoggerApp: App {
     init() {
-        print("Configuration: \(Bundle.main.infoDictionary?["Configuration"] ?? "Unknown")")
+        print("Configuration: \(Configuration.current), server: \(Configuration.current.server)")
 #if USE_REALM
         print("Using Realm")
         #else
         print("NOT using Realm")
         #endif
+        if FeatureFlagsFactory.getFlags(forConfiguration: Configuration.current).useRealm {
+            print("Using Realm dynamically")
+        } else {
+            print("Not using Realm dynamically")
+        }
     }
     var body: some Scene {
         WindowGroup {

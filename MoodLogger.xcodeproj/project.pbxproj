@@ -15,6 +15,12 @@
 		C943C4F127EDFAB200086225 /* MoodDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943C4F027EDFAB200086225 /* MoodDialogView.swift */; };
 		C943C4F327F1D5F100086225 /* EntryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943C4F227F1D5F100086225 /* EntryRepository.swift */; };
 		C943C4F527F1E0DF00086225 /* MoodDialogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943C4F427F1E0DF00086225 /* MoodDialogViewModel.swift */; };
+		C9A8E05627F7434100DA6543 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8E05527F7434100DA6543 /* Configuration.swift */; };
+		C9A8E05827F74D1700DA6543 /* FeatureFlagSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8E05727F74D1700DA6543 /* FeatureFlagSet.swift */; };
+		C9A8E05A27F74D5C00DA6543 /* DebugFeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8E05927F74D5C00DA6543 /* DebugFeatureFlags.swift */; };
+		C9A8E05C27F74D8E00DA6543 /* QAFeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8E05B27F74D8E00DA6543 /* QAFeatureFlags.swift */; };
+		C9A8E05E27F74DAF00DA6543 /* ReleaseFeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8E05D27F74DAF00DA6543 /* ReleaseFeatureFlags.swift */; };
+		C9A8E06027F74DEF00DA6543 /* FeatureFlagsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8E05F27F74DEF00DA6543 /* FeatureFlagsFactory.swift */; };
 		C9E52E6127ECB6EF00722CD1 /* MoodLoggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E52E6027ECB6EF00722CD1 /* MoodLoggerApp.swift */; };
 		C9E52E6327ECB6EF00722CD1 /* EntriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E52E6227ECB6EF00722CD1 /* EntriesListView.swift */; };
 		C9E52E6527ECB6F300722CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E52E6427ECB6F300722CD1 /* Assets.xcassets */; };
@@ -36,6 +42,12 @@
 		C9A8E05227F7059800DA6543 /* QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QA.xcconfig; sourceTree = "<group>"; };
 		C9A8E05327F705B900DA6543 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		C9A8E05427F740C700DA6543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C9A8E05527F7434100DA6543 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		C9A8E05727F74D1700DA6543 /* FeatureFlagSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlagSet.swift; sourceTree = "<group>"; };
+		C9A8E05927F74D5C00DA6543 /* DebugFeatureFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugFeatureFlags.swift; sourceTree = "<group>"; };
+		C9A8E05B27F74D8E00DA6543 /* QAFeatureFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QAFeatureFlags.swift; sourceTree = "<group>"; };
+		C9A8E05D27F74DAF00DA6543 /* ReleaseFeatureFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseFeatureFlags.swift; sourceTree = "<group>"; };
+		C9A8E05F27F74DEF00DA6543 /* FeatureFlagsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlagsFactory.swift; sourceTree = "<group>"; };
 		C9E52E5D27ECB6EF00722CD1 /* MoodLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E52E6027ECB6EF00722CD1 /* MoodLoggerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodLoggerApp.swift; sourceTree = "<group>"; };
 		C9E52E6227ECB6EF00722CD1 /* EntriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesListView.swift; sourceTree = "<group>"; };
@@ -108,6 +120,12 @@
 				C9A8E05127F7058700DA6543 /* Develop.xcconfig */,
 				C9A8E05227F7059800DA6543 /* QA.xcconfig */,
 				C9A8E05327F705B900DA6543 /* Release.xcconfig */,
+				C9A8E05527F7434100DA6543 /* Configuration.swift */,
+				C9A8E05727F74D1700DA6543 /* FeatureFlagSet.swift */,
+				C9A8E05927F74D5C00DA6543 /* DebugFeatureFlags.swift */,
+				C9A8E05B27F74D8E00DA6543 /* QAFeatureFlags.swift */,
+				C9A8E05D27F74DAF00DA6543 /* ReleaseFeatureFlags.swift */,
+				C9A8E05F27F74DEF00DA6543 /* FeatureFlagsFactory.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -252,13 +270,19 @@
 				C92D36AE27EDD392006E8CA8 /* Mood.swift in Sources */,
 				C943C4F327F1D5F100086225 /* EntryRepository.swift in Sources */,
 				C943C4F127EDFAB200086225 /* MoodDialogView.swift in Sources */,
+				C9A8E05E27F74DAF00DA6543 /* ReleaseFeatureFlags.swift in Sources */,
 				C943C4F527F1E0DF00086225 /* MoodDialogViewModel.swift in Sources */,
+				C9A8E06027F74DEF00DA6543 /* FeatureFlagsFactory.swift in Sources */,
 				C92D36AB27EDD2A2006E8CA8 /* Entry.swift in Sources */,
+				C9A8E05827F74D1700DA6543 /* FeatureFlagSet.swift in Sources */,
 				C92D36B127EDD4C9006E8CA8 /* InMemoryEntryRepository.swift in Sources */,
 				C9E52E6327ECB6EF00722CD1 /* EntriesListView.swift in Sources */,
 				C943C4EF27EDDA2300086225 /* EntryRowView.swift in Sources */,
 				C92D36A827EDD257006E8CA8 /* EntriesListViewModel.swift in Sources */,
+				C9A8E05A27F74D5C00DA6543 /* DebugFeatureFlags.swift in Sources */,
 				C9E52E6127ECB6EF00722CD1 /* MoodLoggerApp.swift in Sources */,
+				C9A8E05C27F74D8E00DA6543 /* QAFeatureFlags.swift in Sources */,
+				C9A8E05627F7434100DA6543 /* Configuration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
