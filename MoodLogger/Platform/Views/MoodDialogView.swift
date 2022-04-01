@@ -60,7 +60,11 @@ struct MoodButton: View {
         Text(String("\(mood)"))
             .font(Font.system(size: 40))
             .padding()
+#if NEW_UI
+            .background(Color.red)
+#else
             .background(Color.accentColor)
+#endif
             .cornerRadius(10)
     }
 }

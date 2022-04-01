@@ -20,6 +20,13 @@ import SwiftUI
 
 @main
 struct MoodLoggerApp: App {
+    init() {
+        #if USE_REALM
+        print("Using Realm")
+        #else
+        print("NOT using Realm")
+        #endif
+    }
     var body: some Scene {
         WindowGroup {
             NavigationView {

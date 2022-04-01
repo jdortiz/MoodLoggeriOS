@@ -1,0 +1,11 @@
+//
+//  Release.xcconfig
+//  MoodLogger
+//
+//  Created by Jorge Ortiz Fuentes on 1/4/22.
+//  Copyright © 2022 MongoDB. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+SWIFT_ACTIVE_COMPILATION_CONDITIONS =
