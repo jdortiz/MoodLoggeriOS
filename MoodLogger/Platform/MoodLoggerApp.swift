@@ -21,7 +21,8 @@ import SwiftUI
 @main
 struct MoodLoggerApp: App {
     init() {
-        #if USE_REALM
+        print("Configuration: \(Bundle.main.infoDictionary?["Configuration"] ?? "Unknown")")
+#if USE_REALM
         print("Using Realm")
         #else
         print("NOT using Realm")

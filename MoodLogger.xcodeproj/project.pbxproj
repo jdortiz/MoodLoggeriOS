@@ -35,6 +35,7 @@
 		C9A8E05127F7058700DA6543 /* Develop.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Develop.xcconfig; sourceTree = "<group>"; };
 		C9A8E05227F7059800DA6543 /* QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QA.xcconfig; sourceTree = "<group>"; };
 		C9A8E05327F705B900DA6543 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		C9A8E05427F740C700DA6543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C9E52E5D27ECB6EF00722CD1 /* MoodLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E52E6027ECB6EF00722CD1 /* MoodLoggerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodLoggerApp.swift; sourceTree = "<group>"; };
 		C9E52E6227ECB6EF00722CD1 /* EntriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesListView.swift; sourceTree = "<group>"; };
@@ -132,6 +133,7 @@
 		C9E52E5F27ECB6EF00722CD1 /* MoodLogger */ = {
 			isa = PBXGroup;
 			children = (
+				C9A8E05427F740C700DA6543 /* Info.plist */,
 				C9A8E05027F704DA00DA6543 /* Configuration */,
 				C92D36AF27EDD4A3006E8CA8 /* Data */,
 				C92D36AC27EDD2AB006E8CA8 /* Domain */,
@@ -335,6 +337,7 @@
 				DEVELOPMENT_TEAM = 324YCFLY7B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodLogger/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -479,6 +482,7 @@
 				DEVELOPMENT_TEAM = 324YCFLY7B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodLogger/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -508,6 +512,7 @@
 				DEVELOPMENT_TEAM = 324YCFLY7B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodLogger/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
