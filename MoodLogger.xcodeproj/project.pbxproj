@@ -15,6 +15,13 @@
 		C943C4F127EDFAB200086225 /* MoodDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943C4F027EDFAB200086225 /* MoodDialogView.swift */; };
 		C943C4F327F1D5F100086225 /* EntryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943C4F227F1D5F100086225 /* EntryRepository.swift */; };
 		C943C4F527F1E0DF00086225 /* MoodDialogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943C4F427F1E0DF00086225 /* MoodDialogViewModel.swift */; };
+		C98E2EBB27FD860C0080A6E9 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C98E2EBA27FD860C0080A6E9 /* Settings.bundle */; };
+		C9A8E05627F7434100DA6543 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8E05527F7434100DA6543 /* Configuration.swift */; };
+		C9A8E05827F74D1700DA6543 /* FeatureFlagSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8E05727F74D1700DA6543 /* FeatureFlagSet.swift */; };
+		C9A8E05A27F74D5C00DA6543 /* DebugFeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8E05927F74D5C00DA6543 /* DebugFeatureFlags.swift */; };
+		C9A8E05C27F74D8E00DA6543 /* QAFeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8E05B27F74D8E00DA6543 /* QAFeatureFlags.swift */; };
+		C9A8E05E27F74DAF00DA6543 /* ReleaseFeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8E05D27F74DAF00DA6543 /* ReleaseFeatureFlags.swift */; };
+		C9A8E06027F74DEF00DA6543 /* FeatureFlagsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8E05F27F74DEF00DA6543 /* FeatureFlagsFactory.swift */; };
 		C9E52E6127ECB6EF00722CD1 /* MoodLoggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E52E6027ECB6EF00722CD1 /* MoodLoggerApp.swift */; };
 		C9E52E6327ECB6EF00722CD1 /* EntriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E52E6227ECB6EF00722CD1 /* EntriesListView.swift */; };
 		C9E52E6527ECB6F300722CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E52E6427ECB6F300722CD1 /* Assets.xcassets */; };
@@ -32,6 +39,17 @@
 		C943C4F027EDFAB200086225 /* MoodDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDialogView.swift; sourceTree = "<group>"; };
 		C943C4F227F1D5F100086225 /* EntryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryRepository.swift; sourceTree = "<group>"; };
 		C943C4F427F1E0DF00086225 /* MoodDialogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDialogViewModel.swift; sourceTree = "<group>"; };
+		C98E2EBA27FD860C0080A6E9 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		C9A8E05127F7058700DA6543 /* Develop.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Develop.xcconfig; sourceTree = "<group>"; };
+		C9A8E05227F7059800DA6543 /* QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QA.xcconfig; sourceTree = "<group>"; };
+		C9A8E05327F705B900DA6543 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		C9A8E05427F740C700DA6543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C9A8E05527F7434100DA6543 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		C9A8E05727F74D1700DA6543 /* FeatureFlagSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlagSet.swift; sourceTree = "<group>"; };
+		C9A8E05927F74D5C00DA6543 /* DebugFeatureFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugFeatureFlags.swift; sourceTree = "<group>"; };
+		C9A8E05B27F74D8E00DA6543 /* QAFeatureFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QAFeatureFlags.swift; sourceTree = "<group>"; };
+		C9A8E05D27F74DAF00DA6543 /* ReleaseFeatureFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseFeatureFlags.swift; sourceTree = "<group>"; };
+		C9A8E05F27F74DEF00DA6543 /* FeatureFlagsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlagsFactory.swift; sourceTree = "<group>"; };
 		C9E52E5D27ECB6EF00722CD1 /* MoodLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E52E6027ECB6EF00722CD1 /* MoodLoggerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodLoggerApp.swift; sourceTree = "<group>"; };
 		C9E52E6227ECB6EF00722CD1 /* EntriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesListView.swift; sourceTree = "<group>"; };
@@ -98,6 +116,22 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		C9A8E05027F704DA00DA6543 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				C9A8E05127F7058700DA6543 /* Develop.xcconfig */,
+				C9A8E05227F7059800DA6543 /* QA.xcconfig */,
+				C9A8E05327F705B900DA6543 /* Release.xcconfig */,
+				C9A8E05527F7434100DA6543 /* Configuration.swift */,
+				C9A8E05727F74D1700DA6543 /* FeatureFlagSet.swift */,
+				C9A8E05927F74D5C00DA6543 /* DebugFeatureFlags.swift */,
+				C9A8E05B27F74D8E00DA6543 /* QAFeatureFlags.swift */,
+				C9A8E05D27F74DAF00DA6543 /* ReleaseFeatureFlags.swift */,
+				C9A8E05F27F74DEF00DA6543 /* FeatureFlagsFactory.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
 		C9E52E5427ECB6EF00722CD1 = {
 			isa = PBXGroup;
 			children = (
@@ -119,12 +153,15 @@
 		C9E52E5F27ECB6EF00722CD1 /* MoodLogger */ = {
 			isa = PBXGroup;
 			children = (
+				C9A8E05427F740C700DA6543 /* Info.plist */,
+				C9A8E05027F704DA00DA6543 /* Configuration */,
 				C92D36AF27EDD4A3006E8CA8 /* Data */,
 				C92D36AC27EDD2AB006E8CA8 /* Domain */,
 				C92D36A927EDD264006E8CA8 /* ViewModels */,
 				C92D36A527EDD151006E8CA8 /* Platform */,
 				C9E52E6427ECB6F300722CD1 /* Assets.xcassets */,
 				C9E52E6627ECB6F300722CD1 /* Preview Content */,
+				C98E2EBA27FD860C0080A6E9 /* Settings.bundle */,
 			);
 			path = MoodLogger;
 			sourceTree = "<group>";
@@ -199,6 +236,7 @@
 			files = (
 				C9E52E7027ECBAEA00722CD1 /* LICENSE.txt in Resources */,
 				C9E52E6827ECB6F300722CD1 /* Preview Assets.xcassets in Resources */,
+				C98E2EBB27FD860C0080A6E9 /* Settings.bundle in Resources */,
 				C9E52E7127ECBAEA00722CD1 /* README.md in Resources */,
 				C9E52E6527ECB6F300722CD1 /* Assets.xcassets in Resources */,
 			);
@@ -236,21 +274,28 @@
 				C92D36AE27EDD392006E8CA8 /* Mood.swift in Sources */,
 				C943C4F327F1D5F100086225 /* EntryRepository.swift in Sources */,
 				C943C4F127EDFAB200086225 /* MoodDialogView.swift in Sources */,
+				C9A8E05E27F74DAF00DA6543 /* ReleaseFeatureFlags.swift in Sources */,
 				C943C4F527F1E0DF00086225 /* MoodDialogViewModel.swift in Sources */,
+				C9A8E06027F74DEF00DA6543 /* FeatureFlagsFactory.swift in Sources */,
 				C92D36AB27EDD2A2006E8CA8 /* Entry.swift in Sources */,
+				C9A8E05827F74D1700DA6543 /* FeatureFlagSet.swift in Sources */,
 				C92D36B127EDD4C9006E8CA8 /* InMemoryEntryRepository.swift in Sources */,
 				C9E52E6327ECB6EF00722CD1 /* EntriesListView.swift in Sources */,
 				C943C4EF27EDDA2300086225 /* EntryRowView.swift in Sources */,
 				C92D36A827EDD257006E8CA8 /* EntriesListViewModel.swift in Sources */,
+				C9A8E05A27F74D5C00DA6543 /* DebugFeatureFlags.swift in Sources */,
 				C9E52E6127ECB6EF00722CD1 /* MoodLoggerApp.swift in Sources */,
+				C9A8E05C27F74D8E00DA6543 /* QAFeatureFlags.swift in Sources */,
+				C9A8E05627F7434100DA6543 /* Configuration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		C9E52E6927ECB6F300722CD1 /* Debug */ = {
+		C9A8E04E27F7036200DA6543 /* QA */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9A8E05227F7059800DA6543 /* QA.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -304,13 +349,104 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = QA;
+		};
+		C9A8E04F27F7036200DA6543 /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9A8E05227F7059800DA6543 /* QA.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MoodLogger/Preview Content\"";
+				DEVELOPMENT_TEAM = 324YCFLY7B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodLogger/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mongodb.MoodLogger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = QA;
+		};
+		C9E52E6927ECB6F300722CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9A8E05127F7058700DA6543 /* Develop.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		C9E52E6A27ECB6F300722CD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9A8E05327F705B900DA6543 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -374,6 +510,7 @@
 				DEVELOPMENT_TEAM = 324YCFLY7B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodLogger/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -403,6 +540,7 @@
 				DEVELOPMENT_TEAM = 324YCFLY7B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodLogger/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +566,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C9E52E6927ECB6F300722CD1 /* Debug */,
+				C9A8E04E27F7036200DA6543 /* QA */,
 				C9E52E6A27ECB6F300722CD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -437,6 +576,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C9E52E6C27ECB6F300722CD1 /* Debug */,
+				C9A8E04F27F7036200DA6543 /* QA */,
 				C9E52E6D27ECB6F300722CD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
