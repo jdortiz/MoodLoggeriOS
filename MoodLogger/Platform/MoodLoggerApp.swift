@@ -17,16 +17,19 @@
  * limitations under the License.
  */
 import SwiftUI
+import Foundation
 
 @main
 struct MoodLoggerApp: App {
     init() {
+        self.registerSettings()
+
         print("Configuration: \(Configuration.current), server: \(Configuration.current.server)")
 #if USE_REALM
         print("Using Realm")
-        #else
+#else
         print("NOT using Realm")
-        #endif
+#endif
         if FeatureFlagsFactory.getFlags(forConfiguration: Configuration.current).useRealm {
             print("Using Realm dynamically")
         } else {
@@ -39,5 +42,25 @@ struct MoodLoggerApp: App {
                 EntriesListView(viewModel: EntriesListViewModel(repository: InMemoryEntryRepository()))
             }
         }
+    }
+
+    private func registerSettings() {
+        guard let settingsURL = Bundle.main.url(forResource: "Root",
+                                                withExtension: "plist",
+                                                subdirectory: "Settings.bundle"),
+              let settingsPlist = NSDictionary(contentsOf: settingsURL),
+              let preferences = settingsPlist["PreferenceSpecifiers"] as? [NSDictionary] else {
+            print("Couldn't load data from Settings.bundle")
+            return
+        }
+        var defaultsFromSettings: [String: Any] = [:]
+
+        for preference in preferences {
+            if let key = preference["Key"] as? String,
+               let value = preference["DefaultValue"] {
+                defaultsFromSettings[key] = value
+            }
+        }
+        UserDefaults.standard.register(defaults: defaultsFromSettings)
     }
 }

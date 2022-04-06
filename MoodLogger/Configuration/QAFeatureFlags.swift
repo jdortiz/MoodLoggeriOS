@@ -16,7 +16,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import Foundation
 
 enum QAFeatureFlags: FeatureFlagSet {
-    static var useRealm: Bool = false
+    static var useRealm: Bool = {
+            UserDefaults.standard.bool(forKey: "use_realm")
+    }()
 }

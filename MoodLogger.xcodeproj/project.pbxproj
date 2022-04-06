@@ -15,6 +15,7 @@
 		C943C4F127EDFAB200086225 /* MoodDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943C4F027EDFAB200086225 /* MoodDialogView.swift */; };
 		C943C4F327F1D5F100086225 /* EntryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943C4F227F1D5F100086225 /* EntryRepository.swift */; };
 		C943C4F527F1E0DF00086225 /* MoodDialogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943C4F427F1E0DF00086225 /* MoodDialogViewModel.swift */; };
+		C98E2EBB27FD860C0080A6E9 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C98E2EBA27FD860C0080A6E9 /* Settings.bundle */; };
 		C9A8E05627F7434100DA6543 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8E05527F7434100DA6543 /* Configuration.swift */; };
 		C9A8E05827F74D1700DA6543 /* FeatureFlagSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8E05727F74D1700DA6543 /* FeatureFlagSet.swift */; };
 		C9A8E05A27F74D5C00DA6543 /* DebugFeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8E05927F74D5C00DA6543 /* DebugFeatureFlags.swift */; };
@@ -38,6 +39,7 @@
 		C943C4F027EDFAB200086225 /* MoodDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDialogView.swift; sourceTree = "<group>"; };
 		C943C4F227F1D5F100086225 /* EntryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryRepository.swift; sourceTree = "<group>"; };
 		C943C4F427F1E0DF00086225 /* MoodDialogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDialogViewModel.swift; sourceTree = "<group>"; };
+		C98E2EBA27FD860C0080A6E9 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		C9A8E05127F7058700DA6543 /* Develop.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Develop.xcconfig; sourceTree = "<group>"; };
 		C9A8E05227F7059800DA6543 /* QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QA.xcconfig; sourceTree = "<group>"; };
 		C9A8E05327F705B900DA6543 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				C92D36A527EDD151006E8CA8 /* Platform */,
 				C9E52E6427ECB6F300722CD1 /* Assets.xcassets */,
 				C9E52E6627ECB6F300722CD1 /* Preview Content */,
+				C98E2EBA27FD860C0080A6E9 /* Settings.bundle */,
 			);
 			path = MoodLogger;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			files = (
 				C9E52E7027ECBAEA00722CD1 /* LICENSE.txt in Resources */,
 				C9E52E6827ECB6F300722CD1 /* Preview Assets.xcassets in Resources */,
+				C98E2EBB27FD860C0080A6E9 /* Settings.bundle in Resources */,
 				C9E52E7127ECBAEA00722CD1 /* README.md in Resources */,
 				C9E52E6527ECB6F300722CD1 /* Assets.xcassets in Resources */,
 			);
